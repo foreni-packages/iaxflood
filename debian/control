@@ -1,15 +1,22 @@
 Source: iaxflood
-Section: unknown
+Section: net
 Priority: extra
 Maintainer: Devon Kearns <dookie@kali.org>
 Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.9.3
-Homepage: <insert the upstream URL, if relevant>
-#Vcs-Git: git://git.debian.org/collab-maint/iaxflood.git
-#Vcs-Browser: http://git.debian.org/?p=collab-maint/iaxflood.git;a=summary
+Homepage: http://www.hackingexposedvoip.com/sec_tools.html
+Vcs-Git: ssh://git@git.kali.org/packages/iaxflood.git
+Vcs-Browser: http://git.kali.org/gitweb/?p=packages/iaxflood.git;a=summary
 
 Package: iaxflood
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: VoIP flooder tool
+ A UDP Inter-Asterisk_eXchange (i.e. IAX) packet was captured 
+ from an IAX channel between two Asterisk IP PBX's. The 
+ content of that packet is the source of the payload for the 
+ attack embodied by this tool. While the IAX protocol header 
+ might not match the Asterisk PBX you'll attack with this 
+ tool, it may require more processing on the part of the PBX 
+ than a simple udpflood without any payload that even 
+ resembles an IAX payload.
