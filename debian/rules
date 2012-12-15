@@ -13,5 +13,4 @@
 	dh $@ 
 override_dh_auto_install:
 	dh_installdirs
-	install debian/kali-iaxflood.desktop $(CURDIR)/debian/iaxflood/usr/share/applications/
 	install iaxflood $(CURDIR)/debian/iaxflood/usr/bin/
